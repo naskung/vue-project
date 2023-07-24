@@ -1,3 +1,18 @@
 {
-  "extends": "../.nuxt/tsconfig.server.json"
+  "extends": "../.nuxt/tsconfig.server.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "es5",
+      "es2015"
+    ]
+  },
+  "include": [
+    "./src/**/*"
+  ]
+
+  
 }
